@@ -1,11 +1,11 @@
-"""
-1. Задача: **3Sum**
+# Leetcode
+##  **3Sum**
 
 Описание:
 Given an integer array nums, return all the triplets ```[nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0```.
 
 Notice that the solution set must not contain duplicate triplets.
-"""
+
 
 ```python
 class Solution:
@@ -30,21 +30,21 @@ class Solution:
         return result
 
 ```
-"""
-2. Задача: **Set Matrix Zeroes**
+
+##  **Set Matrix Zeroes**
 
 Описание:
 Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.
 
 You must do it in place.
-"""
+
 
 ```python
 class Solution:
     def setZeroes(self, matrix: List[List[int]]) -> None:
-        """
+        
         Do not return anything, modify matrix in-place instead.
-        """
+        
         rows, cols = len(matrix), len(matrix[0])
         row_zeroes, col_zeroes = set(), set()
 
@@ -59,14 +59,14 @@ class Solution:
                 if i in row_zeroes or j in col_zeroes:
                     matrix[i][j] = 0
 ```
-"""
-3. Задача: **Group Anagrams**
+
+##  **Group Anagrams**
 
 Описание:
 Given an array of strings strs, group the anagrams together. You can return the answer in any order.
 
 An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
-"""
+
 
 ```python
 class Solution:
@@ -82,12 +82,12 @@ class Solution:
             print(anagrams[t])
         return list(anagrams.values())
 ```
-"""
-4. Задача: **Longest Substring Without Repeating Characters**
+
+##  **Longest Substring Without Repeating Characters**
 
 Описание:
 Given a string s, find the length of the longest substring without repeating characters.
-"""
+
 
 ```python
 class Solution:
@@ -106,12 +106,12 @@ class Solution:
         return max_len
 ```
 
-"""
-5. Задача: **Longest Palindromic Substring**
+
+##  **Longest Palindromic Substring**
 
 Описание:
 Given a string s, return the longest palindromic substring in s.
-"""
+
 
 ```python
 class Solution:
@@ -130,8 +130,8 @@ class Solution:
         return s[start:start + max_length]
 
 ```
-"""
-6. Задача: **Evaluate Reverse Polish Notation**
+
+##  **Evaluate Reverse Polish Notation**
 
 Описание:
 You are given an array of strings tokens that represents an arithmetic expression in a Reverse Polish Notation.
@@ -146,7 +146,7 @@ The division between two integers always truncates toward zero.
 There will not be any division by zero.
 The input represents a valid arithmetic expression in a reverse polish notation.
 The answer and all the intermediate calculations can be represented in a 32-bit integer.
-"""
+
 
 ```python
 class Solution:
@@ -169,14 +169,14 @@ class Solution:
 
 ```
 
-"""
-7. Задача: **Majority Element**
+
+##  **Majority Element**
 
 Описание:
 Given an array nums of size n, return the majority element.
 
 The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
-"""
+
 
 ```python
 class Solution:
@@ -191,8 +191,8 @@ class Solution:
         return max_num
 ```
 
-"""
-8. Задача: **Sort Colors**
+
+##   **Sort Colors**
 
 Описание:
 Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
@@ -200,14 +200,14 @@ Given an array nums with n objects colored red, white, or blue, sort them in-pla
 We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
 
 You must solve this problem without using the library's sort function.
-"""
+
 
 ```python
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
-        """
+        
         Do not return anything, modify nums in-place instead.
-        """
+        
         
         left, current, right = 0, 0, len(nums) - 1
 
@@ -218,12 +218,12 @@ class Solution:
         
 ```
 
-"""
-8. Задача: **Top K Frequent Elements**
+
+##   **Top K Frequent Elements**
 
 Описание:
 Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
-"""
+
 
 ```python
 class Solution:

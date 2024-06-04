@@ -1,0 +1,14 @@
+site_name: Web Development Tools Docs
+
+theme:
+  name: readthedocs
+
+nav:
+  - Lab1:
+    - Главная страница: index.md
+    - Аутентификация: auth.md
+    - База данных: db.md
+    - Эндпоинты: endpoints.md
+    - Схемы: schemas.md
+    - Приложение: main.md
+    - Leetcode: leetcode.md

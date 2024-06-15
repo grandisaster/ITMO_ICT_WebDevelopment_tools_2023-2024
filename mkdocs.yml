@@ -5,10 +5,14 @@ theme:
 
 nav:
   - Lab1:
-    - Главная страница: index.md
-    - Аутентификация: auth.md
-    - База данных: db.md
-    - Эндпоинты: endpoints.md
-    - Схемы: schemas.md
-    - Приложение: main.md
-    - Leetcode: leetcode.md
+    - Главная страница: LR1/index.md
+    - Аутентификация: LR1/auth.md
+    - База данных: LR1/db.md
+    - Эндпоинты: LR1/endpoints.md
+    - Схемы: LR1/schemas.md
+    - Приложение: LR1/main.md
+    - Leetcode: LR1/leetcode.md
+  - Lab2:
+    - Главная страница: LR2/index.md
+    - Задание: LR2/task.md
+    - Leetcode: LR2/leetcode.md

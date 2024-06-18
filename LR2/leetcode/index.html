@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Leetcode - Web Development Tools Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Leetcode";
+        var mkdocs_page_input_path = "LR2\\leetcode.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Web Development Tools Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Главная страница</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lab1</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/auth/">Аутентификация</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/db/">База данных</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/endpoints/">Эндпоинты</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/schemas/">Схемы</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/main/">Приложение</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/leetcode/">Leetcode</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lab2</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../task1/">Задание 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../task2/">Задание 2</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Leetcode</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#add-two-numbers">Add Two Numbers</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#odd-even-linked-list">Odd Even Linked List</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#intersection-of-two-linked-lists">Intersection of Two Linked Lists</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#count-and-say">Count and Say</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lab3</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR3/task1/">Задание 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR3/task2/">Задание 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR3/task3/">Задание 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR3/leetcode/">Leetcode</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Web Development Tools Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Lab2</li>
+      <li class="breadcrumb-item active">Leetcode</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="leetcode">Leetcode</h1>
+<h2 id="add-two-numbers">Add Two Numbers</h2>
+<p>Описание: You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.</p>
+<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
+<pre><code class="language-python"># Definition for singly-linked list.
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+class Solution:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -&gt; Optional[ListNode]:
+        temp = ListNode(0)
+        curr = temp
+        carry = 0
+
+        while l1 or l2 or carry:
+            val1 = l1.val if l1 else 0
+            val2 = l2.val if l2 else 0
+            sum_val = val1 + val2 + carry
+            carry = sum_val // 10
+            curr.next = ListNode(sum_val % 10)
+            curr = curr.next
+            l1 = l1.next if l1 else None
+            l2 = l2.next if l2 else None
+
+        return temp.next
+
+</code></pre>
+<h2 id="odd-even-linked-list">Odd Even Linked List</h2>
+<p>Описание: Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the reordered list.</p>
+<p>The first node is considered odd, and the second node is even, and so on.</p>
+<p>Note that the relative order inside both the even and odd groups should remain as it was in the input.</p>
+<p>You must solve the problem in O(1) extra space complexity and O(n) time complexity.</p>
+<pre><code class="language-python"># Definition for singly-linked list.
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+class Solution:
+    def oddEvenList(self, head: Optional[ListNode]) -&gt; Optional[ListNode]:
+        if not head or not head.next:
+            return head
+        odd = head
+        even = head.next
+        head_even = even
+        while even and even.next:
+            odd.next = even.next
+            odd = odd.next
+            even.next = odd.next
+            even = even.next
+        odd.next = head_even
+        return head
+</code></pre>
+<h2 id="intersection-of-two-linked-lists">Intersection of Two Linked Lists</h2>
+<p>Описание: Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null.</p>
+<pre><code class="language-python"># Definition for singly-linked list.
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+class Solution:
+    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -&gt; Optional[ListNode]:
+        if not headA or not headB:
+            return None
+        # linked lists' length
+        len_a = 0
+        node_a = headA
+        while node_a:
+            len_a += 1
+            node_a = node_a.next
+        len_b = 0
+        node_b = headB
+        while node_b:
+            len_b += 1
+            node_b = node_b.next
+        # longer list is moved by the difference of length
+        diff = abs(len_a - len_b)
+        if len_a &gt; len_b:
+            while diff &gt; 0:
+                headA = headA.next
+                diff -= 1
+        else:
+            while diff &gt; 0:
+                headB = headB.next
+                diff -= 1
+        # iterate through LL until find the intersection node
+        while headA and headB:
+            if headA == headB:
+                return headA
+            headA = headA.next
+            headB = headB.next
+        return None
+</code></pre>
+<h2 id="count-and-say">Count and Say</h2>
+<p>Описание: The count-and-say sequence is a sequence of digit strings defined by the recursive formula:</p>
+<p>countAndSay(1) = "1"
+countAndSay(n) is the run-length encoding of countAndSay(n - 1).
+Run-length encoding (RLE) is a string compression method that works by replacing consecutive identical characters (repeated 2 or more times) with the concatenation of the character and the number marking the count of the characters (length of the run). For example, to compress the string "3322251" we replace "33" with "23", replace "222" with "32", replace "5" with "15" and replace "1" with "11". Thus the compressed string becomes "23321511".</p>
+<p>Given a positive integer n, return the nth element of the count-and-say sequence.</p>
+<pre><code class="language-python">class Solution:
+    def countAndSay(self, n: int) -&gt; str:
+        if n == 1:
+            return &quot;1&quot;
+        prev_str = self.countAndSay(n - 1)
+        curr_str = &quot;&quot;
+        count = 1
+        for i in range(len(prev_str)):
+            if i == len(prev_str) - 1 or prev_str[i] != prev_str[i + 1]:
+                curr_str += str(count) + prev_str[i]
+                count = 1
+            else:
+                count += 1
+        return curr_str
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../task2/" class="btn btn-neutral float-left" title="Задание 2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../LR3/task1/" class="btn btn-neutral float-right" title="Задание 1">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../task2/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../LR3/task1/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

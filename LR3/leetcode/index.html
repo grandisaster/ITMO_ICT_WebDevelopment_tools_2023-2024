@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Leetcode - Web Development Tools Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Leetcode";
+        var mkdocs_page_input_path = "LR3\\leetcode.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Web Development Tools Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Главная страница</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lab1</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/auth/">Аутентификация</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/db/">База данных</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/endpoints/">Эндпоинты</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/schemas/">Схемы</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/main/">Приложение</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/leetcode/">Leetcode</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lab2</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR2/task1/">Задание 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR2/task2/">Задание 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR2/leetcode/">Leetcode</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lab3</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../task1/">Задание 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../task2/">Задание 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../task3/">Задание 3</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Leetcode</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#powx-n">Pow(x, n)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sqrtx">Sqrt(x)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#happy-number">Happy Number</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Web Development Tools Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Lab3</li>
+      <li class="breadcrumb-item active">Leetcode</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="leetcode">Leetcode</h1>
+<h2 id="powx-n">Pow(x, n)</h2>
+<p>Implement pow(x, n), which calculates x raised to the power n (i.e., x^n).</p>
+<pre><code class="language-python">class Solution:
+    def myPow(self, x: float, n: int) -&gt; float:
+        def rec(x, n):
+            if n == 0:
+                return 1
+            if n == 1:
+                return x
+            if n % 2 == 0:
+                return rec(x * x, n // 2)
+            else:
+                return x * rec(x * x, n // 2)
+
+        if n &lt; 0:
+            return 1 / rec(x, -n)
+        else:
+            return rec(x, n)
+
+</code></pre>
+<h2 id="sqrtx">Sqrt(x)</h2>
+<p>Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.</p>
+<p>You must not use any built-in exponent function or operator.</p>
+<p>For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.</p>
+<pre><code class="language-python">class Solution:
+    def mySqrt(self, x: int) -&gt; int:
+        left, right = 0, x
+        while left &lt;= right:
+            mid = (left + right) // 2
+            if mid * mid &lt;= x &lt; (mid + 1) * (mid + 1):
+                return mid
+            elif mid * mid &lt; x:
+                left = mid + 1
+            else:
+                right = mid - 1
+        return left
+
+</code></pre>
+<h2 id="happy-number">Happy Number</h2>
+<p>Write an algorithm to determine if a number n is happy.</p>
+<p>A happy number is a number defined by the following process:</p>
+<p>Starting with any positive integer, replace the number by the sum of the squares of its digits.
+Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
+Those numbers for which this process ends in 1 are happy.
+Return true if n is a happy number, and false if not.</p>
+<pre><code class="language-python">class Solution:
+    def isHappy(self, n: int) -&gt; bool:
+        s = set()
+        while n != 1 and n not in s:
+            s.add(n)
+            n = sum(int(d) ** 2 for d in str(n))
+        return n == 1
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../task3/" class="btn btn-neutral float-left" title="Задание 3"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../task3/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

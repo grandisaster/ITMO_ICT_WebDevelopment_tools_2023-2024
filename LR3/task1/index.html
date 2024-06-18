@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Задание 1 - Web Development Tools Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u0417\u0430\u0434\u0430\u043d\u0438\u0435 1";
+        var mkdocs_page_input_path = "LR3\\task1.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Web Development Tools Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Главная страница</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lab1</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/auth/">Аутентификация</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/db/">База данных</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/endpoints/">Эндпоинты</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/schemas/">Схемы</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/main/">Приложение</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR1/leetcode/">Leetcode</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lab2</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR2/task1/">Задание 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR2/task2/">Задание 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR2/leetcode/">Leetcode</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lab3</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Задание 1</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">Реализация парсера</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dockerfile">Создание Dockerfile</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#app-dockerfile">App Dockerfile</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#celery-dockerfile">Celery Dockerfile</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#docker-compose">Создание docker-compose</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../task2/">Задание 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../task3/">Задание 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../leetcode/">Leetcode</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Web Development Tools Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Lab3</li>
+      <li class="breadcrumb-item active">Задание 1</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="fastapi-docker">Упаковка FastAPI приложения, базы данных и парсера данных в Docker</h1>
+<p>Создание FastAPI приложения: Создано в рамках лабораторной работы номер 1</p>
+<p>Создание базы данных: Создано в рамках лабораторной работы номер 1</p>
+<p>Создание парсера данных: Создано в рамках лабораторной работы номер 2</p>
+<h2 id="_1">Реализация парсера</h2>
+<p>Реализуйте возможность вызова парсера по http Для этого можно сделать отдельное приложение FastAPI для парсера или воспользоваться библиотекой socket или подобными.</p>
+<pre><code class="language-python">from fastapi import FastAPI, BackgroundTasks
+from parse import parse_and_save
+from database import get_session
+from fastapi import Depends, status
+from schemas import Parce
+
+app = FastAPI()
+
+
+@app.post(&quot;/parse/&quot;)
+async def parse(
+    url: str, background_tasks: BackgroundTasks, session=Depends(get_session)
+):
+    background_tasks.add_task(parse_and_save, url, session)
+    return {&quot;message&quot;: &quot;Parse started.&quot;}
+
+
+@app.get(&quot;/get-tasks/&quot;)
+def cases_list(session=Depends(get_session)) -&gt; list[Parce]:
+    return session.query(Parce).all()
+</code></pre>
+<h2 id="dockerfile">Создание Dockerfile</h2>
+<p>Чтобы обеспечить функционирование приложения, требуется развернуть три контейнера: контейнер для базы данных, контейнер для парсера и контейнер для FastAPI-приложения. Для их создания мы использовали два Dockerfile, при этом для образа базы данных было сделано прямое указание в docker-compose файле:</p>
+<h3 id="app-dockerfile">App Dockerfile</h3>
+<pre><code>FROM python:3.9.19-alpine3.20
+
+WORKDIR ./app
+
+COPY . .
+RUN pip3 install -r requirements.txt
+
+CMD uvicorn main:app --host localhost --port 8000
+</code></pre>
+<h3 id="celery-dockerfile">Celery Dockerfile</h3>
+<pre><code>```
+FROM python:3.10-alpine3.19
+
+WORKDIR /run_celery
+
+COPY . .
+RUN pip3 install -r requirements.txt
+
+CMD uvicorn main:app --host localhost --port 8001
+
+```
+</code></pre>
+<h2 id="docker-compose">Создание docker-compose</h2>
+<pre><code>version: '3.9'
+services:
+main_db:
+container_name: main_db
+image: postgres
+restart: always
+environment: - POSTGRES_PASSWORD=1 - POSTGRES_USER=postgres - POSTGRES_DB=web_data - POSTGRES_PORT=5432
+volumes: - postgres_data:/var/lib/postgresql/data/
+ports: - &quot;5432:5432&quot;
+networks: - backend
+
+app:
+container_name: app
+build:
+context: ./app
+env_file: .env
+depends_on: - main_db - redis
+ports: - &quot;8000:8000&quot;
+command: uvicorn main:app --host 0.0.0.0 --port 8000
+networks: - backend
+restart: always
+
+celery_run:
+container_name: celery_run
+build:
+context: ./run_celery
+env_file: .env
+depends_on: - main_db - redis
+ports: - &quot;8001:8001&quot;
+command: uvicorn main:app --host 0.0.0.0 --port 8001
+networks: - backend
+restart: always
+
+celery_start:
+build:
+context: ./run_celery
+container_name: celery_start
+command: celery -A celery_start worker --loglevel=info
+restart: always
+depends_on: - redis - app - main_db
+networks: - backend
+
+redis:
+image: redis
+ports: - &quot;6379:6379&quot;
+networks: - backend
+
+volumes:
+postgres_data:
+
+networks:
+backend:
+driver: bridge
+
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../LR2/leetcode/" class="btn btn-neutral float-left" title="Leetcode"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../task2/" class="btn btn-neutral float-right" title="Задание 2">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../LR2/leetcode/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../task2/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

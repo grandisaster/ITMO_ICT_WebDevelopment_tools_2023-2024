@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Leetcode - Web Development Tools Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Leetcode";
+        var mkdocs_page_input_path = "LR1\\leetcode.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Web Development Tools Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Главная страница</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lab1</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../auth/">Аутентификация</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../db/">База данных</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../endpoints/">Эндпоинты</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../schemas/">Схемы</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../main/">Приложение</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Leetcode</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#3sum">3Sum</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#set-matrix-zeroes">Set Matrix Zeroes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#group-anagrams">Group Anagrams</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#longest-substring-without-repeating-characters">Longest Substring Without Repeating Characters</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#longest-palindromic-substring">Longest Palindromic Substring</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#evaluate-reverse-polish-notation">Evaluate Reverse Polish Notation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#majority-element">Majority Element</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sort-colors">Sort Colors</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#top-k-frequent-elements">Top K Frequent Elements</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lab2</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR2/task1/">Задание 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR2/task2/">Задание 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR2/leetcode/">Leetcode</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lab3</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR3/task1/">Задание 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR3/task2/">Задание 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR3/task3/">Задание 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LR3/leetcode/">Leetcode</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Web Development Tools Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Lab1</li>
+      <li class="breadcrumb-item active">Leetcode</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="leetcode">Leetcode</h1>
+<h2 id="3sum"><strong>3Sum</strong></h2>
+<p>Описание:
+Given an integer array nums, return all the triplets <code>[nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0</code>.</p>
+<p>Notice that the solution set must not contain duplicate triplets.</p>
+<pre><code class="language-python">class Solution:
+    def threeSum(self, nums: List[int]) -&gt; List[List[int]]:
+        nums.sort()
+        result = []
+        for i in range(len(nums) - 2):
+            if i &gt; 0 and nums[i] == nums[i - 1]:
+                continue
+            target = -nums[i]
+            j, k = i + 1, len(nums) - 1
+            while j &lt; k:
+                if nums[j] + nums[k] == target:
+                    result.append([nums[i], nums[j], nums[k]])
+                    j += 1
+                    while j &lt; k and nums[j] == nums[j - 1]:
+                        j += 1
+                elif nums[j] + nums[k] &lt; target:
+                    j += 1
+                else:
+                    k -= 1
+        return result
+
+</code></pre>
+<h2 id="set-matrix-zeroes"><strong>Set Matrix Zeroes</strong></h2>
+<p>Описание:
+Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.</p>
+<p>You must do it in place.</p>
+<pre><code class="language-python">class Solution:
+    def setZeroes(self, matrix: List[List[int]]) -&gt; None:
+
+        Do not return anything, modify matrix in-place instead.
+
+        rows, cols = len(matrix), len(matrix[0])
+        row_zeroes, col_zeroes = set(), set()
+
+        for i in range(rows):
+            for j in range(cols):
+                if matrix[i][j] == 0:
+                    row_zeroes.add(i)
+                    col_zeroes.add(j)
+
+        for i in range(rows):
+            for j in range(cols):
+                if i in row_zeroes or j in col_zeroes:
+                    matrix[i][j] = 0
+</code></pre>
+<h2 id="group-anagrams"><strong>Group Anagrams</strong></h2>
+<p>Описание:
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.</p>
+<p>An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.</p>
+<pre><code class="language-python">class Solution:
+    def groupAnagrams(self, strs: List[str]) -&gt; List[List[str]]:
+        anagrams = {}
+
+        for s in strs:
+            t = tuple(sorted(s))
+            if t in anagrams:
+                anagrams[t].append(s)
+            else:
+                anagrams[t] = [s]
+            print(anagrams[t])
+        return list(anagrams.values())
+</code></pre>
+<h2 id="longest-substring-without-repeating-characters"><strong>Longest Substring Without Repeating Characters</strong></h2>
+<p>Описание:
+Given a string s, find the length of the longest substring without repeating characters.</p>
+<pre><code class="language-python">class Solution:
+    def lengthOfLongestSubstring(self, s: str) -&gt; int:
+        start, max_len = 0, 0
+        used_chars = {} 
+
+        for i in range(len(s)):
+            char = s[i]
+            if char in used_chars and used_chars[char] &gt;= start:
+                start = used_chars[char] + 1
+            else:
+                max_len = max(max_len, i - start + 1)
+            used_chars[char] = i
+
+        return max_len
+</code></pre>
+<h2 id="longest-palindromic-substring"><strong>Longest Palindromic Substring</strong></h2>
+<p>Описание:
+Given a string s, return the longest palindromic substring in s.</p>
+<pre><code class="language-python">class Solution:
+    def longestPalindrome(self, s: str) -&gt; str:
+        dp = [[False] * len(s) for _ in range(len(s))]
+        max_length, start = 1, 0
+
+        for i in range(len(s)):
+            for j in range(i, -1, -1):
+                if s[i] == s[j] and (i - j &lt; 2 or dp[j + 1][i - 1]):
+                    dp[j][i] = True
+                    if i - j + 1 &gt; max_length:
+                        max_length = i - j + 1
+                        start = j
+
+        return s[start:start + max_length]
+
+</code></pre>
+<h2 id="evaluate-reverse-polish-notation"><strong>Evaluate Reverse Polish Notation</strong></h2>
+<p>Описание:
+You are given an array of strings tokens that represents an arithmetic expression in a Reverse Polish Notation.</p>
+<p>Evaluate the expression. Return an integer that represents the value of the expression.</p>
+<p>Note that:</p>
+<p>The valid operators are '+', '-', '*', and '/'.
+Each operand may be an integer or another expression.
+The division between two integers always truncates toward zero.
+There will not be any division by zero.
+The input represents a valid arithmetic expression in a reverse polish notation.
+The answer and all the intermediate calculations can be represented in a 32-bit integer.</p>
+<pre><code class="language-python">class Solution:
+    def evalRPN(self, tokens: List[str]) -&gt; int:
+        stack = []
+        operations = {
+            '+': lambda a, b: a + b,
+            '-': lambda a, b: a - b,
+            '*': lambda a, b: a * b,
+            '/': lambda a, b: int(a / b)
+        }
+        for token in tokens:
+            if token in operations:
+                b = stack.pop()
+                a = stack.pop()
+                stack.append(operations[token](a, b))
+            else:
+                stack.append(int(token))
+        return stack[0]
+
+</code></pre>
+<h2 id="majority-element"><strong>Majority Element</strong></h2>
+<p>Описание:
+Given an array nums of size n, return the majority element.</p>
+<p>The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.</p>
+<pre><code class="language-python">class Solution:
+    def majorityElement(self, nums: List[int]) -&gt; int:
+        max_count = len(nums)//2
+        max_num = 0
+        nums_set = set(nums)
+        for num in nums_set:
+            if nums.count(num) &gt; max_count:
+                max_count = nums.count(num)
+                max_num = num
+        return max_num
+</code></pre>
+<h2 id="sort-colors"><strong>Sort Colors</strong></h2>
+<p>Описание:
+Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.</p>
+<p>We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.</p>
+<p>You must solve this problem without using the library's sort function.</p>
+<pre><code class="language-python">class Solution:
+    def sortColors(self, nums: List[int]) -&gt; None:
+
+        Do not return anything, modify nums in-place instead.
+
+
+        left, current, right = 0, 0, len(nums) - 1
+
+        while current &lt;= right:
+            if nums[current] == 0: nums[left], nums[current], left, current = nums[current], nums[left], left + 1, current + 1
+            elif nums[current] == 2: nums[current], nums[right], right = nums[right], nums[current], right - 1
+            else: current += 1
+
+</code></pre>
+<h2 id="top-k-frequent-elements"><strong>Top K Frequent Elements</strong></h2>
+<p>Описание:
+Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.</p>
+<pre><code class="language-python">class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -&gt; List[int]:
+        count = {}
+        for num in nums:
+            count[num] = count.get(num, 0) + 1
+
+        bs = [[] for _ in range(len(nums) + 1)]
+        for num, freq in count.items():
+            bs[freq].append(num)
+
+        result = []
+        for b in reversed(bs):
+            result.extend(b)
+            if len(result) &gt;= k:
+                break
+
+        return result[:k]
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../main/" class="btn btn-neutral float-left" title="Приложение"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../LR2/task1/" class="btn btn-neutral float-right" title="Задание 1">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../main/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../LR2/task1/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

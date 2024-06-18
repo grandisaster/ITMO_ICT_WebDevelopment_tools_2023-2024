@@ -68,6 +68,8 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#mltprcspy">mltprcs.py</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#thrdpy">thrd.py</a>
+    </li>
         </ul>
     </li>
     </ul>
@@ -153,7 +155,9 @@ if __name__ == &quot;__main__&quot;:
     print(&quot;Result:&quot;, RESULT, &quot;Execution time:&quot;, time() - start)
 
 </code></pre>
-<p><code>Result: 499999500000 Execution time: 0.07601785659790039</code></p>
+<pre><code>Result: 499999500000
+Execution time: 0.07601785659790039
+</code></pre>
 <h3 id="mltprcspy">mltprcs.py</h3>
 <pre><code class="language-python">from multiprocessing import Pool
 from time import time
@@ -177,13 +181,11 @@ if __name__ == &quot;__main__&quot;:
     print(&quot;Result:&quot;, RESULT)
     print(&quot;Execution time:&quot;, time() - start)
 </code></pre>
-<p>```Result: 499999500000
-Execution time: 0.688213586807251</p>
-<pre><code>
-### thrd.py
-
-```python
-import threading
+<pre><code>Result: 499999500000
+Execution time: 0.688213586807251
+</code></pre>
+<h3 id="thrdpy">thrd.py</h3>
+<pre><code class="language-python">import threading
 from time import time
 
 lock = threading.Lock()

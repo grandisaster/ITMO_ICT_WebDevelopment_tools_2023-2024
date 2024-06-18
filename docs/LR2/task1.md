@@ -12,7 +12,8 @@
 
 ## Решение:
 
-### asynic.py 
+### asynic.py
+
 ```python
 import asyncio
 from time import time
@@ -44,7 +45,10 @@ if __name__ == "__main__":
 
 ```
 
-```Result: 499999500000 Execution time: 0.07601785659790039```
+```
+Result: 499999500000
+Execution time: 0.07601785659790039
+```
 
 ### mltprcs.py
 
@@ -72,7 +76,8 @@ if __name__ == "__main__":
     print("Execution time:", time() - start)
 ```
 
-```Result: 499999500000
+```
+Result: 499999500000
 Execution time: 0.688213586807251
 ```
 
